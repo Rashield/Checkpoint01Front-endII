@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b406f97522.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a id="topo" class="navbar-brand" href="#"><img id="imgTopo" src="./img/CTD.jpg" class="img-fluid" alt="Imagem responsiva"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre nós</a>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+          <div id="container" class=".container-fluid col-12">
+           
+          
+            <form class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-3 mb-1">
+                    <label for="titulo">Título</label>
+                    <input type="text" class="form-control campo" id="titulo" placeholder="Título" required>
+                    <div class="invalid-feedback">
+                        Por favor, informe um título.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="url">URL da imagem</label>
+                    <input type="text" class="form-control campo" id="url" placeholder="URL" required>
+                    <div class="invalid-feedback">
+                        Por favor, informe uma URL.
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-1">
+                    <div class="form-group">
+                        <label for="descricao">Descrição</label>
+                        <textarea placeholder="Descrição" class="form-control campo" id="descricao" rows="1" required></textarea>
+                        <div class="invalid-feedback">
+                          Por favor, insira uma descrição.
+                      </div>
+                      </div>
+                    </div>
+                  <button id="botaoEnviar" class="btn btn-info col-md-2" type="submit">Enviar</button>
+                </div>
+            </form>
+            <div id="cards" class="row text-justify">
+              <div id="cardExemplo" class="card col-md-6 mb-5">
+                <img class="card-img-top" src="./img/ragna-Thor-Ragnarok-Capa.jpg" alt="Imagem de capa do card">
+                <div class="card-body"> 
+                  <h4 class="card-title"><strong>Thor: Ragnarok</strong></h5>
+                  <p class="card-text">Após anos afastado, Thor retorna para casa e descobre que seu pai, Odin, rei de Asgard, está desaparecido. Após encontrá-lo, ele toma conhecimento de sua irmã mais velha, Hela, a poderosa e implacável deusa da morte. Com o auxílio de Loki, ele enfrenta Hela, mas durante a batalha, Thor acaba preso em Sakaar, um planeta do outro lado do universo. Agora, ele precisa correr contra o tempo para voltar a Asgard e impedir o Ragnarok, a destruição de seu mundo.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <footer class="pt-5 bg-dark navbar-dark mt-2">
+                <section class="row centered bg-dark text-white">
+                  <div class="dados-aluno col-sm-12 col-md-4 mt-2 text-center">
+                    <h4>Áderson Costa</h4>    
+                    <div class="icones-socialmedia">
+                        <a href="https://www.linkedin.com/in/adersoncc/" target="_blank"><img src="./img/linkedin.svg" alt=""></a>
+                        <a href="https://github.com/Adersoncc" target="_blank"><img src="./img/git.svg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="dados-aluno col-sm-12 col-md-4 mt-2 text-center">
+                    <h4>Darlei Pedro Feix</h4>    
+                    <div class="icones-socialmedia">
+                        <a href="https://www.linkedin.com/in/darlei-feix-2292b7216/" target="_blank"><img src="./img/linkedin.svg" alt=""></a>
+                        <a href="https://github.com/Rashield" target="_blank"><img src="./img/git.svg" alt=""></a>
+                  </div>
+                  </div>
+                  <div class="dados-aluno col-sm-12 col-md-4 mt-2 text-center">
+                    <h4>Icaro Oliveira</h4>    
+                    <div class="icones-socialmedia">
+                        <a href="https://www.linkedin.com/in/iccaro-oliveira-98950a208/" target="_blank"><img src="./img/linkedin.svg" alt=""></a>
+                        <a href="https://github.com/iccarooliveira/" target="_blank"><img src="./img/git.svg" alt=""></a>
+                    </div>
+                  </div>
+                </section>
+                <section class="bg-dark text-center text-white pt-2">
+                  <p class="mb-0">© 2022 Digital House. Todos os direitos reservados.</p>
+                </section>
+        </footer>
+    
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</html>
